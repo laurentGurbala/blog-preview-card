@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+    --color-yellow: #f4d04e;
+    --color-white: #fff;
+    --color-gray-500: #6b6b6b;
+    --color-gray-950: #121212;
+}
+
+/* base */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Figtree", sans-serif;
+}
