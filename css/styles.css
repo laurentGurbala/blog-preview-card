@@ -41,13 +41,16 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2.4rem;
 }
 
 /* Card */
 .card {
     background: var(--color-white);
     padding: 2.4rem;
-    width: 325px;
+    width: 100%;
+    max-width: 380px;
+    min-width: 320px;
     border: 1px solid var(--color-gray-950);
     border-radius: 2rem;
     margin-bottom: 2rem;
@@ -61,7 +64,7 @@ body {
 
 .flag {
     font-weight: 800;
-    background:  var(--color-yellow);
+    background: var(--color-yellow);
     display: inline-block;
     padding: 0.5rem 1rem;
     font-size: 1.4rem;
@@ -71,13 +74,13 @@ body {
 }
 
 .card__date {
-    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 2vw, 1.4rem);
     line-height: 1.4rem;
     margin-bottom: 2.4rem;
 }
 
 .card__title {
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 2vw, 2.2rem);
     font-weight: 800;
     margin-bottom: 2.4rem;
 }
@@ -88,13 +91,13 @@ body {
 
 .card__details {
     color: var(--color-gray-500);
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
     margin-bottom: 2.4rem;
 }
 
 .card__author {
     font-weight: 800;
-    font-size: 1.4rem;
+    font-size: clamp(1.4rem, 2vw, 1.6rem);
     display: flex;
     align-items: center;
     gap: 1.4rem;
